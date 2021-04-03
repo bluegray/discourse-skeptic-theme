@@ -17,8 +17,7 @@
 // make header icons semi-translucent
 .d-header-icons {
   .d-icon {
-    //color: transparentize(var(--header_primary), 0.29);
-    color: color.adjust(var(--header_primary), $alpha: -0.29);
+    color: rgba(var(--icon-color-rgb), 0.95);
   }
 }
 
@@ -231,6 +230,36 @@
 .user-main .about .controls {
   padding-right: 10px;
 }
+
+
+// Contrast fixes
+.topic-meta-data .post-info a {
+  color: var(--primary-high-or-secondary-low);
+}
+
+nav.post-controls .show-replies {
+  color: var(--primary-high);
+}
+
+.small-action .small-action-desc.timegap {
+  color: var(--primary-high);
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  cursor: pointer;
+  &:visited {
+    color: var(--link-color);
+  }
+  &:hover {
+    color: var(--link-color);
+  }
+  &:active {
+    color: var(--link-color);
+  }
+}
+
 
 // RTL Overrides
 .rtl {
