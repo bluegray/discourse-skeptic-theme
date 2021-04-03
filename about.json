@@ -12,6 +12,18 @@
       "danger": "b36257",
       "success": "1f5d4c",
       "love": "f83462"
+    },
+     "Skeptic Dark": {
+      "primary": "ffffff",
+      "secondary": "0c0c0c",
+      "tertiary": "0088cc",
+      "quaternary": "b36257",
+      "header_background": "333333",
+      "header_primary": "ffffff",
+      "highlight": "c09a4d",
+      "danger": "b36257",
+      "success": "1f5d4c",
+      "love": "f83462"
     }
   }
 }
