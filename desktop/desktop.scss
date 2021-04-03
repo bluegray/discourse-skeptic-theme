@@ -40,6 +40,10 @@
   border-bottom: 3px solid var(--tertiary);
 }
 
+.admin-controls .nav-pills>li a.active {
+  background: var(--secondary);
+}
+
 //remove highlighting navigation background on hover
 .nav-pills > li > a:hover {
   background-color: var(--secondary);
