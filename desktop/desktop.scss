@@ -1,7 +1,7 @@
 @import "common/foundation/variables";
 
 @mixin boxShadow {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
 @mixin buttonShadow {
@@ -338,6 +338,28 @@ table th {
 #create-topic.btn-default:not(:hover):not(:active):not(:focus) .d-button-label {
   display: none;
 }
+
+.timeline-footer-controls {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  width: 50%;
+}
+
+.widget-button.btn.create {
+  position: static;
+  margin: 0.5em;
+}
+
+.topic-body .topic-meta-data {
+  //border-bottom: 1px solid var(--primary-medium);
+}
+
+tbody {
+  border-top: 3px solid rgba(var(--tertiary-rgb), 0.5);
+}
+
+///////////////////////////////////////////////////////
 
 
 // RTL Overrides
