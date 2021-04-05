@@ -9,9 +9,17 @@
 }
 
 @mixin buttonTransition {
-  transition: right 0.5s, bottom 0.5s, border-radius 0.5s, text-indent 0.2s,
-    visibility 1s, width 0.2s ease, height 0.5s ease 0.4s, color 0.5s,
-    background-color 2s, transform 0.5s;
+  transition:
+    right 0.5s,
+    bottom 0.5s,
+    border-radius 0.5s,
+    text-indent 0.2s,
+    visibility 1s,
+    width 0.2s ease,
+    height 0.5s ease 0.4s,
+    color 0.5s,
+    background-color 2s,
+    transform 0.5s;
 }
 
 // make header icons semi-translucent
@@ -40,7 +48,7 @@
   border-bottom: 3px solid var(--tertiary);
 }
 
-.admin-controls .nav-pills>li a.active {
+.admin-controls .nav-pills > li a.active {
   background: var(--secondary);
 }
 
@@ -54,6 +62,7 @@
   a.active i {
     color: var(--primary);
   }
+
   a:hover:not(.active) i {
     color: var(--quaternary);
   }
@@ -65,13 +74,14 @@
   background-color: var(--material-lighter-secondary);
   margin-top: 10px;
   border-radius: 4px;
-  padding: 15px 20px 0 20px;
+  padding: 15px 20px 0;
 }
 
 //more space for avatars
 .topic-avatar {
   border-top: 0;
   padding-right: 10px;
+
   .avatar-flair {
     right: 4px;
   }
@@ -87,14 +97,17 @@
   border: none;
 
   .topic-avatar {
-    padding-left: 0px;
+    padding-left: 0;
   }
+
   &.top {
     padding-left: 2em;
+
     .row .topic-avatar,
     .row .topic-body {
       border: none;
     }
+
     .collapse-down {
       transform: translate(-120%, 62%);
     }
@@ -132,10 +145,12 @@
   color: var(--secondary);
   white-space: nowrap;
   overflow: hidden;
+
   .d-icon {
     margin: 0;
     color: var(--secondary);
   }
+
   .d-button-label {
     display: inline-block;
     transition: all 0.3s;
@@ -148,6 +163,7 @@
       width: 0;
       margin: 0;
     }
+
     .d-icon {
       margin: 0 0.25em;
     }
@@ -178,6 +194,7 @@
   width: 60px;
   height: 60px;
   @include buttonTransition;
+
   .d-icon {
     color: var(--secondary);
   }
@@ -194,6 +211,7 @@
   .timeline-container {
     margin-left: 820px;
   }
+
   .topic-admin-popup-menu {
     left: -40% !important;
   }
@@ -221,6 +239,7 @@
   0% {
     background-color: lighten($tertiary, 20%);
   }
+
   100% {
     background-color: var(--material-lighter-secondary);
   }
@@ -249,15 +268,75 @@ a {
   color: var(--link-color);
   text-decoration: none;
   cursor: pointer;
+
   &:visited {
     color: var(--link-color);
   }
+
   &:hover {
     color: var(--link-color);
   }
+
   &:active {
     color: var(--link-color);
   }
+}
+
+// Custom fixes
+///////////////
+.admin-customize .themes-list-header .tab {
+  &.btn {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.navigation-container {
+  --nav-space: 1em;
+}
+
+#navigation-bar {
+  margin-left: 2em;
+}
+
+.topic-list-item.visited a.title:not(.badge-notification),
+.latest-topic-list-item.visited a.title:not(.badge-notification),
+.category-topic-link.visited a.title:not(.badge-notification) {
+  color: var(--primary-high);
+}
+
+.topic-list-item.visited span.badge-category,
+.latest-topic-list-item.visited span.badge-category,
+.category-topic-link.visited span.badge-category {
+  color: var(--primary-high);
+}
+
+.topic-list-main-link a.title,
+.topic-list .main-link a.title,
+.latest-topic-list-item .main-link a.title {
+  color: var(--primary);
+}
+
+.topic-list th:first-of-type,
+.topic-list td:first-of-type {
+  padding-left: 1em;
+}
+
+.topic-list td,
+table th {
+  color: var(--primary-high);
+}
+
+.timeline-container .topic-timeline .start-date,
+.timeline-container .topic-timeline .timeline-ago,
+.timeline-container .topic-timeline .now-date,
+.topic-list th button .d-icon,
+.badge-posts[href] {
+  color: var(--primary-high-or-secondary-low);
+}
+
+#create-topic.btn-default:not(:hover):not(:active):not(:focus) .d-button-label {
+  display: none;
 }
 
 
@@ -266,27 +345,33 @@ a {
   .topic-avatar {
     padding-right: initial;
     padding-left: 10px;
+
     .avatar-flair {
       right: initial;
       left: 4px;
     }
   }
+
   .embedded-posts .topic-avatar {
     padding-left: initial;
     padding-right: 0;
   }
+
   #create-topic.btn-default {
     right: initial;
     left: 50px;
   }
+
   .widget-button.btn.create {
     left: initial;
     right: -10px;
   }
+
   .widget-button.btn.notifications-dropdown {
     right: initial;
     left: 4px;
   }
+
   .user-main .about .controls {
     padding-right: initial;
     padding-left: 10px;
@@ -300,6 +385,7 @@ a {
       margin-left: initial;
       margin-right: 820px;
     }
+
     .topic-admin-popup-menu {
       left: initial !important;
       right: -40% !important;

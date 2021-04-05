@@ -16,6 +16,7 @@
   border-top: 0;
   padding-top: 20px;
   padding-left: 10px;
+
   .avatar-flair {
     right: 4px;
   }
@@ -23,7 +24,7 @@
 
 //increase space between post meta and post content
 .boxed .contents {
-  padding: 20px 0 0 0;
+  padding: 20px 0 0;
 }
 
 //remove stray border from bottom of last post
@@ -54,6 +55,7 @@ aside.quote {
   .topic-avatar {
     padding-left: initial;
     padding-right: 10px;
+
     .avatar-flair {
       right: initial;
       left: 4px;
