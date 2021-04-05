@@ -40,21 +40,39 @@
 }
 
 //underline navigation links
-.nav-pills > li.active > a,
-.nav-pills > li > a.active {
+
+@mixin nav-pills-active {
   color: var(--primary);
   font-weight: 500;
-  background-color: var(--secondary);
+  background-color: transparent;
   border-bottom: 3px solid var(--tertiary);
 }
 
-.admin-controls .nav-pills > li a.active {
-  background: var(--secondary);
+.nav-pills {
+  > li {
+    > a {
+      color: rgba(var(--primary-rgb), 0.8);
+      border-bottom: 3px solid transparent;
+
+      &:hover {
+        background-color: transparent;
+        color: var(--primary);
+        border-bottom: 3px solid var(--tertiary);
+      }
+
+      &.active {
+        @include nav-pills-active;
+      }
+    }
+
+    &.active > a {
+      @include nav-pills-active;
+    }
+  }
 }
 
-//remove highlighting navigation background on hover
-.nav-pills > li > a:hover {
-  background-color: var(--secondary);
+.admin-controls .nav-pills > li a.active {
+  //background: var(--secondary);
 }
 
 //fix color of user profile navigation icons
