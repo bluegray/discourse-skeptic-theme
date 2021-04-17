@@ -1,19 +1,6 @@
 @import "mixins";
 @import "colors";
 
-//use Roboto font
-html {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-}
-
-body input,
-body button,
-body select,
-body textarea {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-}
-
 // make header icons semi-translucent
 .d-header-icons {
   .d-icon {
@@ -146,7 +133,7 @@ body textarea {
   .nav-pills > li a {
     &:hover,
     &.active {
-      background: var(--primary-low-mid);
+      background: var(--primary-low);
     }
 
     &:hover:not(.active) {
