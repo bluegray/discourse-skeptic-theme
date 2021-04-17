@@ -1,5 +1,7 @@
 {
-  "name": "Skeptic Theme",
+  "name": "Skeptic",
+  "about_url": "https://github.com/bluegray/discourse-skeptic-theme",
+  "license_url": "https://raw.githubusercontent.com/bluegray/discourse-skeptic-theme/master/LICENSE.txt",
   "color_schemes": {
     "Skeptic Light": {
       "primary": "000000",
@@ -13,7 +15,7 @@
       "success": "1f5d4c",
       "love": "f83462"
     },
-     "Skeptic Dark": {
+    "Skeptic Dark": {
       "primary": "ffffff",
       "secondary": "0c0c0c",
       "tertiary": "0088cc",
