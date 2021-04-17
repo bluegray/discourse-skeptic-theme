@@ -8,8 +8,7 @@
 .category-list,
 .topic-list,
 .latest-topic-list {
-  @include boxShadow;
-  background-color: var(--material-lighter-secondary);
+  background-color: var(--secondary);
 }
 
 //underline navigation links
