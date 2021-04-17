@@ -1,6 +1,7 @@
 $icon-color: dark-light-choose($tertiary, $quaternary);
 $link-color: dark-light-choose(darken($tertiary, 15%), $tertiary);
 $quaternary-high: darken($quaternary, 10%);
+$tertiary-desaturate: desaturate($tertiary, 20%);
 
 :root {
   --header_primary-rgb: #{hexToRGB($header_primary)};
@@ -8,4 +9,6 @@ $quaternary-high: darken($quaternary, 10%);
   --icon-color-rgb: #{hexToRGB($icon-color)};
   --link-color: #{$link-color};
   --quaternary-high: #{$quaternary-high};
+  --tertiary-desaturate: #{$tertiary-desaturate};
+  --tertiary-desaturate-rgb: #{hexToRGB($tertiary-desaturate)};
 }

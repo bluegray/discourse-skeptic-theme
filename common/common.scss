@@ -207,3 +207,11 @@ a {
 table th {
   color: var(--primary-high);
 }
+
+tbody {
+  border-top: 3px solid rgba(var(--tertiary-desaturate-rgb), 0.29);
+}
+
+tr {
+  border-bottom: 1px solid rgba(var(--tertiary-desaturate-rgb), 0.29);
+}
